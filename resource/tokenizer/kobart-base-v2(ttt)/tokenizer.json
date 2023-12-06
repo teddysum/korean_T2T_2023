@@ -2108,7 +2108,7 @@
       "<mask>": 6,
       "[TAB]": 7,
       "[NL]": 8,
-      "<unused2>": 9,
+      "[SPAN]": 9,
       "<unused3>": 10,
       "<unused4>": 11,
       "<unused5>": 12,
