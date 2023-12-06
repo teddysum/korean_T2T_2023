@@ -63,7 +63,7 @@ def main(args):
     logger.info("[+] Start Decoding")
     decoded = [tokenizer.decode(tokens, skip_special_tokens=True) for tokens in tqdm(total_summary_tokens)]
     
-    j_list = jsonlload("resource/data/nikluge-2022-table-test.jsonl")
+    j_list = jsonlload("resource/data/nikluge-gtps-2023-test.jsonl")
     for idx, oup in enumerate(decoded):
         j_list[idx]["output"] = oup
 
