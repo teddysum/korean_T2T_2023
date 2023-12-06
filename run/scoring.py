@@ -23,7 +23,7 @@ def main(args):
     tagger = MeCab.Tagger('-d /usr/local/lib/mecab/dic/mecab-ko-dic')
 
     logger.info(f'[+] Load Dataset')
-    references_j_list = jsonlload("resource/data/nikluge-2022-table-test-answer.jsonl")
+    references_j_list = jsonlload("resource/data/nikluge-gtps-2023-test-answer.jsonl")
     references = [j["output"] for j in references_j_list]
 
     candidate_j_list = jsonlload(args.candidate_path)
