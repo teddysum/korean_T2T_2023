@@ -31,7 +31,7 @@ def main(args):
     tokenizer = AutoTokenizer.from_pretrained(args.tokenizer)
 
     logger.info(f'[+] Load Dataset')
-    dataloader = Table2TextDataLoader("resource/data/nikluge-2022-table-test.jsonl", tokenizer=tokenizer, batch_size=args.batch_size, mode="infer")
+    dataloader = Table2TextDataLoader("resource/data/nikluge-gtps-2023-dev.jsonl", tokenizer=tokenizer, batch_size=args.batch_size, mode="infer")
 
     logger.info(f'[+] Load Model from "{args.model_ckpt_path}"')
     model = BartForConditionalGeneration.from_pretrained(args.model_ckpt_path)
